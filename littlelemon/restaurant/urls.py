@@ -5,7 +5,7 @@ from . import views
 
 
 router: DefaultRouter = DefaultRouter()
-router.register(r'tables', views.BookingViewSet)
+router.register('tables', views.BookingViewSet)
 
 urlpatterns = [
     path('', views.index, name='index'),
